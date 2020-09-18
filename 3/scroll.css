@@ -1,0 +1,426 @@
+* {
+	margin: 0;
+	padding: 0;
+
+}
+
+html {
+
+	scroll-behavior: smooth;
+
+}
+
+body {
+	line-height: 1.6;
+
+
+
+
+}
+
+.container {
+	overflow-y: scroll;
+	overflow: hidden;
+	/*
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+*/
+}
+
+#section1 {
+	/*	scroll-snap-align:center;*/
+	background-color: black;
+	height: 600px;
+	color: white;
+}
+
+#section2 {
+
+	background-color: darkslateblue;
+	height: 600px;
+	color: white;
+	text-decoration: underline;
+
+}
+
+#section3 {
+
+	background-color: white;
+	height: 600px;
+
+}
+
+nav {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	z-index: 1;
+	display: flex;
+	justify-content: space-around;
+	backdrop-filter: blur(8px);
+
+
+	/*	 so that it always come top on content*/
+}
+
+
+
+nav ul {
+	display: flex;
+	/*flex make all in a line*/
+	list-style: none;
+
+
+}
+
+
+nav ul li {
+
+
+	margin: 0 1rem;
+	padding: 1rem;
+}
+
+nav ul li a {
+
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #a7aba9;
+}
+
+nav ul li a:hover {
+
+	color: white;
+	text-decoration: none;
+
+
+
+}
+
+#section1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	text-transform: capitalize;
+
+}
+
+#section2 {
+
+	background: url('https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80') no-repeat center center/cover;
+
+	text-transform: capitalize;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+
+
+	height: 100vh;
+	width: 100%;
+}
+
+#section3 {
+
+	background: url('https://wallpapercave.com/wp/1kuXFdR.jpg') no-repeat center center/cover;
+	color: red;
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.blur {
+
+	backdrop-filter: blur(8px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+
+/*
+
+#footer{	height: 8vh;
+		width: 100%;
+		background-color: black;
+		color: whitesmoke;
+		padding: 2rem;
+		font-size: 15px;
+		
+}
+#footer a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+#footer a:hover{
+	color: deepskyblue;
+}*/
+footer {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+}
+
+.t a {
+	text-decoration: none;
+	color: white;
+}
+
+.t a:hover {
+	color: deepskyblue;
+}
+
+.banner1 {
+
+	animation: slide1 12s linear infinite;
+}
+
+.banner2 {
+	animation: slide2 12s linear infinite;
+}
+
+.banner3 {
+	animation: slide3 12s linear infinite;
+}
+
+.banner4 {
+	animation: slide4 12s linear infinite;
+}
+
+#section1 img {
+
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	animation: zoom-out 3s linear infinite;
+}
+
+@keyframes zoom-out {
+	100% {
+		width: 90%;
+	}
+}
+
+.text-box {
+	position: absolute;
+
+
+}
+
+.text-box p {
+	backdrop-filter: blur(8px);
+}
+
+.text-box span {
+	width: 10%;
+	height: 1px;
+	background-color: red;
+	position: absolute;
+}
+
+@keyframes slide1 {
+	0% {
+		visibility: visible;
+	}
+
+	25% {
+		visibility: hidden;
+	}
+
+	50% {
+		visibility: hidden;
+	}
+
+	75% {
+		visibility: hidden;
+	}
+
+	100% {
+		visibility: visible;
+	}
+}
+
+@keyframes slide2 {
+	0% {
+		visibility: hidden;
+	}
+
+	25% {
+		visibility: hidden;
+	}
+
+	50% {
+		visibility: visible;
+	}
+
+	75% {
+		visibility: hidden;
+	}
+
+	100% {
+		visibility: hidden;
+	}
+}
+
+@keyframes slide3 {
+	0% {
+		visibility: hidden;
+	}
+
+	25% {
+		visibility: hidden;
+	}
+
+	50% {
+		visibility: hidden;
+
+	}
+
+	75% {
+		visibility: visible;
+	}
+
+	100% {
+		visibility: hidden;
+	}
+}
+
+@keyframes slide4 {
+	0% {
+		visibility: hidden;
+	}
+
+	25% {
+		visibility: hidden;
+	}
+
+	75% {
+		visibility: hidden;
+	}
+
+	50% {
+		visibility: hidden;
+
+	}
+
+	100% {
+		visibility: visible;
+	}
+}
+
+#section3 h1 {
+	backdrop-filter: blur(8px);
+	color: white;
+	border: 1px dashed yellow;
+}
+
+#section3 p {
+	backdrop-filter: blur(8px);
+	color: black;
+	border: 1px dotted yellow;
+}
+
+
+#section3 h2 {
+	backdrop-filter: blur(8px);
+	color: white;
+	border: 1px solid yellow;
+}
+
+.marq {
+	border: 1px solid black;
+	background-color: rgba(0, 0, 0, 0.4);
+	box-shadow: 4px 5px 10px 2px black;
+	/* horizontal vertical blur blurwidth color */
+	backdrop-filter: blur(8px);
+
+}
+
+.marq ul {
+	list-style: square;
+	color: white;
+
+}
+
+
+.marq a {
+	color: white;
+	text-decoration: none;
+}
+
+/*
+@media screen and (max-width:500px){
+
+	body{
+		display: none;
+	}
+
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar .icon {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.navbar li a:not(:first-child) {
+		display: none;
+	}
+
+	.navbar a.icon {
+		float: right;
+		display: block;
+	}
+
+
+
+	.navbar.responsive {
+		position: relative;
+	}
+
+	.navbar.responsive .icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.navbar.responsive li a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+}
